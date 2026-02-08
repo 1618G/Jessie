@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambridge Property Styling | Airbnb &amp; Home Staging Design</title>
+    <meta name="description" content="Transform your Airbnb rental or unsold property with bespoke interior design and staging by Cambridge Colour Consultants. Expert fitouts, styling &amp; staging in Cambridgeshire.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cursor follower -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="mainNav">
+        <div class="nav__inner">
+            <a href="#hero" class="nav__logo">
+                <img class="nav__logo-img" src="https://static.wixstatic.com/media/f4bbec_f5181f050cad4831a8fc011ba7cf59b8~mv2.png/v1/crop/x_99,y_99,w_306,h_296/fill/w_119,h_114,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cambridge(1).png" alt="Cambridge Property Styling Logo">
+                <span class="nav__logo-text">Cambridge<br>Property Styling</span>
+            </a>
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav__links" id="navLinks">
+                <li><a href="#services" class="nav__link">Services</a></li>
+                <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                <li><a href="#process" class="nav__link">Process</a></li>
+                <li><a href="#quote" class="nav__link">Get a Quote</a></li>
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#contact" class="nav__link nav__link--cta">Book Consultation</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero__bg">
+            <div class="hero__image">
+                <img src="https://static.wixstatic.com/media/f4bbec_c3b127485fed44c4b4769b09e6871ae8~mv2.jpg/v1/fill/w_1920,h_1080,al_c,q_85,enc_avif,quality_auto/f4bbec_c3b127485fed44c4b4769b09e6871ae8~mv2.jpg" alt="Scandi inspired dining room with light pink walls and plants">
+            </div>
+            <div class="hero__gradient"></div>
+            <div class="hero__pattern"></div>
+        </div>
+        <div class="hero__content">
+            <div class="hero__tag reveal-up">
+                <span class="hero__tag-line"></span>
+                <span>By Cambridge Colour Consultants</span>
+                <span class="hero__tag-line"></span>
+            </div>
+            <h1 class="hero__title">
+                <span class="reveal-up" style="--delay: 0.1s">Transform</span>
+                <span class="reveal-up hero__title--accent" style="--delay: 0.2s">Spaces</span>
+                <span class="reveal-up" style="--delay: 0.3s">Into</span>
+                <span class="reveal-up hero__title--accent" style="--delay: 0.4s">Experiences</span>
+            </h1>
+            <p class="hero__subtitle reveal-up" style="--delay: 0.5s">
+                Bespoke Airbnb staging &amp; property styling for homes that deserve to shine.
+                We turn underperforming rentals into 5-star destinations and stale listings into sold signs.
+            </p>
+            <div class="hero__actions reveal-up" style="--delay: 0.6s">
+                <a href="#quote" class="btn btn--primary">
+                    <span>Get Your Quote</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#portfolio" class="btn btn--ghost">View Our Work</a>
+            </div>
+            <div class="hero__stats reveal-up" style="--delay: 0.8s">
+                <div class="hero__stat">
+                    <span class="hero__stat-num" data-count="150">0</span><span class="hero__stat-plus">+</span>
+                    <span class="hero__stat-label">Properties Styled</span>
+                </div>
+                <div class="hero__stat-divider"></div>
+                <div class="hero__stat">
+                    <span class="hero__stat-num" data-count="40">0</span><span class="hero__stat-plus">%</span>
+                    <span class="hero__stat-label">Avg Booking Increase</span>
+                </div>
+                <div class="hero__stat-divider"></div>
+                <div class="hero__stat">
+                    <span class="hero__stat-num" data-count="10">0</span><span class="hero__stat-plus">+</span>
+                    <span class="hero__stat-label">Years Experience</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero__scroll">
+            <span>Scroll to explore</span>
+            <div class="hero__scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Marquee Banner -->
+    <div class="marquee">
+        <div class="marquee__track">
+            <span>Airbnb Staging</span>
+            <span class="marquee__dot"></span>
+            <span>Property Restyling</span>
+            <span class="marquee__dot"></span>
+            <span>Interior Fitouts</span>
+            <span class="marquee__dot"></span>
+            <span>Colour Consultancy</span>
+            <span class="marquee__dot"></span>
+            <span>Home Staging</span>
+            <span class="marquee__dot"></span>
+            <span>Vacation Rental Design</span>
+            <span class="marquee__dot"></span>
+            <span>Airbnb Staging</span>
+            <span class="marquee__dot"></span>
+            <span>Property Restyling</span>
+            <span class="marquee__dot"></span>
+            <span>Interior Fitouts</span>
+            <span class="marquee__dot"></span>
+            <span>Colour Consultancy</span>
+            <span class="marquee__dot"></span>
+            <span>Home Staging</span>
+            <span class="marquee__dot"></span>
+            <span>Vacation Rental Design</span>
+            <span class="marquee__dot"></span>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">What We Do</span>
+                <h2 class="section-title">Styling Services</h2>
+                <p class="section-subtitle">From Airbnb fit-outs to selling stale properties &mdash; we craft interiors that captivate, convert, and command premium prices.</p>
+            </div>
+            <div class="services__grid">
+                <!-- Service 1 -->
+                <article class="service-card reveal-up" style="--delay: 0.1s">
+                    <div class="service-card__image">
+                        <img src="https://static.wixstatic.com/media/f4bbec_9cd08b495e844f199beb6cfc1e1c51c9~mv2.jpg/v1/fill/w_600,h_400,al_c,q_80,enc_avif,quality_auto/f4bbec_9cd08b495e844f199beb6cfc1e1c51c9~mv2.jpg" alt="Beautifully styled Airbnb interior" loading="lazy">
+                    </div>
+                    <h3 class="service-card__title">Airbnb Fit-Out &amp; Design</h3>
+                    <p class="service-card__desc">Complete property transformation for short-term rentals. We design spaces guests rave about &mdash; from furniture selection to the finishing touches that earn 5-star reviews.</p>
+                    <ul class="service-card__features">
+                        <li>Full interior design &amp; mood boarding</li>
+                        <li>Furniture &amp; accessory sourcing</li>
+                        <li>Professional photography styling</li>
+                        <li>Guest experience optimisation</li>
+                    </ul>
+                    <div class="service-card__price">
+                        <span class="service-card__from">From</span>
+                        <span class="service-card__amount">&pound;399</span>
+                        <span class="service-card__per">per room</span>
+                    </div>
+                    <a href="#quote" class="service-card__cta">
+                        Get Quote
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </article>
+
+                <!-- Service 2 -->
+                <article class="service-card service-card--featured reveal-up" style="--delay: 0.2s">
+                    <div class="service-card__badge">Most Popular</div>
+                    <div class="service-card__image">
+                        <img src="https://static.wixstatic.com/media/f4bbec_24933fc98a9240b49cdc77f367f34502~mv2.jpg/v1/fill/w_600,h_400,al_c,q_80,enc_avif,quality_auto/5Q2A7899-Edit_edited.jpg" alt="Staged property interior" loading="lazy">
+                    </div>
+                    <h3 class="service-card__title">Property Staging to Sell</h3>
+                    <p class="service-card__desc">Your home isn&rsquo;t selling? We breathe new life into stale listings. Staged homes sell 73% faster and for up to 10% more than unstaged properties.</p>
+                    <ul class="service-card__features">
+                        <li>Strategic staging consultation</li>
+                        <li>Furniture rental &amp; placement</li>
+                        <li>Declutter &amp; restyle guidance</li>
+                        <li>Estate agent photography prep</li>
+                    </ul>
+                    <div class="service-card__price">
+                        <span class="service-card__from">From</span>
+                        <span class="service-card__amount">&pound;1,200</span>
+                        <span class="service-card__per">per property</span>
+                    </div>
+                    <a href="#quote" class="service-card__cta">
+                        Get Quote
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </article>
+
+                <!-- Service 3 -->
+                <article class="service-card reveal-up" style="--delay: 0.3s">
+                    <div class="service-card__image">
+                        <img src="https://static.wixstatic.com/media/f4bbec_098e4d0570b84b71a9a03ab8df80f6e9~mv2.jpg/v1/fill/w_600,h_400,al_c,q_80,enc_avif,quality_auto/Image.jpg" alt="Colour swatches and design consultation" loading="lazy">
+                    </div>
+                    <h3 class="service-card__title">Full Property Refresh</h3>
+                    <p class="service-card__desc">Complete interior overhaul for tired properties. New colour palettes, furnishings, and styling that transforms your space from dull to desirable.</p>
+                    <ul class="service-card__features">
+                        <li>Bespoke colour consultation</li>
+                        <li>Paint, wallpaper &amp; finish selection</li>
+                        <li>Soft furnishing &amp; decor sourcing</li>
+                        <li>Trusted decorator coordination</li>
+                    </ul>
+                    <div class="service-card__price">
+                        <span class="service-card__from">From</span>
+                        <span class="service-card__amount">&pound;195</span>
+                        <span class="service-card__per">consultation</span>
+                    </div>
+                    <a href="#quote" class="service-card__cta">
+                        Get Quote
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before/After Portfolio -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Our Work</span>
+                <h2 class="section-title">Transformations</h2>
+                <p class="section-subtitle">See how we turn ordinary spaces into extraordinary experiences</p>
+            </div>
+            <div class="portfolio__grid">
+                <div class="portfolio__item portfolio__item--wide reveal-up" style="--delay: 0.1s">
+                    <div class="portfolio__card">
+                        <div class="portfolio__visual portfolio__visual--split" style="--accent: var(--color-blush)">
+                            <div class="portfolio__visual-before">
+                                <span class="portfolio__label">Before</span>
+                                <img src="https://static.wixstatic.com/media/f4bbec_b5170c796154477ea12a1b2d3ec3809c~mv2.jpg/v1/fill/w_600,h_400,al_c,q_80,enc_avif,quality_auto/f4bbec_b5170c796154477ea12a1b2d3ec3809c~mv2.jpg" alt="Property before styling" loading="lazy">
+                            </div>
+                            <div class="portfolio__visual-after">
+                                <span class="portfolio__label portfolio__label--after">After</span>
+                                <img src="https://static.wixstatic.com/media/f4bbec_9cd08b495e844f199beb6cfc1e1c51c9~mv2.jpg/v1/fill/w_600,h_400,al_c,q_80,enc_avif,quality_auto/f4bbec_9cd08b495e844f199beb6cfc1e1c51c9~mv2.jpg" alt="Property after Cambridge Property Styling transformation" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="portfolio__info">
+                            <span class="portfolio__type">Airbnb Fit-Out</span>
+                            <h3 class="portfolio__name">Mill Road Apartment, Cambridge</h3>
+                            <p class="portfolio__desc">Two-bedroom flat transformed into a Scandi-inspired Airbnb. Bookings increased 65% within the first month.</p>
+                            <div class="portfolio__stats-row">
+                                <div class="portfolio__mini-stat">
+                                    <span class="portfolio__mini-num">+65%</span>
+                                    <span class="portfolio__mini-label">Bookings</span>
+                                </div>
+                                <div class="portfolio__mini-stat">
+                                    <span class="portfolio__mini-num">4.9</span>
+                                    <span class="portfolio__mini-label">Guest Rating</span>
+                                </div>
+                                <div class="portfolio__mini-stat">
+                                    <span class="portfolio__mini-num">5 days</span>
+                                    <span class="portfolio__mini-label">Turnaround</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__item reveal-up" style="--delay: 0.2s">
+                    <div class="portfolio__card">
+                        <div class="portfolio__visual portfolio__visual--sm" style="--accent: var(--color-sage)">
+                            <img src="https://static.wixstatic.com/media/f4bbec_179d17247c414e188a17eedc0d9b929b~mv2.png/v1/fill/w_500,h_625,al_c,q_85,enc_avif,quality_auto/f4bbec_179d17247c414e188a17eedc0d9b929b~mv2.png" alt="Victorian home staging transformation" loading="lazy">
+                        </div>
+                        <div class="portfolio__info">
+                            <span class="portfolio__type">Home Staging</span>
+                            <h3 class="portfolio__name">Riverside Victorian</h3>
+                            <p class="portfolio__desc">Sat on market for 8 months. Sold within 3 weeks of staging at full asking price.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__item reveal-up" style="--delay: 0.3s">
+                    <div class="portfolio__card">
+                        <div class="portfolio__visual portfolio__visual--sm" style="--accent: var(--color-warm)">
+                            <img src="https://static.wixstatic.com/media/f4bbec_f795d48207c542039ce711756b7c8e07~mv2.jpg/v1/fill/w_500,h_625,al_c,q_80,enc_avif,quality_auto/f4bbec_f795d48207c542039ce711756b7c8e07~mv2.jpg" alt="Studio apartment Airbnb refresh" loading="lazy">
+                        </div>
+                        <div class="portfolio__info">
+                            <span class="portfolio__type">Airbnb Refresh</span>
+                            <h3 class="portfolio__name">King&rsquo;s Parade Studio</h3>
+                            <p class="portfolio__desc">Dated studio reimagined as a luxury city-centre retreat. Nightly rate increased from &pound;85 to &pound;145.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Stats Bar -->
+    <section class="impact-bar">
+        <div class="container">
+            <div class="impact-bar__inner">
+                <div class="impact-bar__item reveal-up" style="--delay: 0.1s">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                    <div class="impact-bar__text">
+                        <span class="impact-bar__num" data-count="4.9">0</span>
+                        <span class="impact-bar__label">Average Guest Rating</span>
+                    </div>
+                </div>
+                <div class="impact-bar__divider"></div>
+                <div class="impact-bar__item reveal-up" style="--delay: 0.2s">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                    </svg>
+                    <div class="impact-bar__text">
+                        <span class="impact-bar__num" data-count="73">0</span><span class="impact-bar__pct">%</span>
+                        <span class="impact-bar__label">Faster Sales After Staging</span>
+                    </div>
+                </div>
+                <div class="impact-bar__divider"></div>
+                <div class="impact-bar__item reveal-up" style="--delay: 0.3s">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+                    </svg>
+                    <div class="impact-bar__text">
+                        <span class="impact-bar__num" data-count="10">0</span><span class="impact-bar__pct">%</span>
+                        <span class="impact-bar__label">Higher Sale Prices</span>
+                    </div>
+                </div>
+                <div class="impact-bar__divider"></div>
+                <div class="impact-bar__item reveal-up" style="--delay: 0.4s">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                    </svg>
+                    <div class="impact-bar__text">
+                        <span class="impact-bar__num" data-count="150">0</span><span class="impact-bar__pct">+</span>
+                        <span class="impact-bar__label">Happy Clients</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">How It Works</span>
+                <h2 class="section-title">Our Design Process</h2>
+                <p class="section-subtitle">From first consultation to final flourish &mdash; a seamless journey to your perfect space</p>
+            </div>
+            <div class="process__timeline">
+                <div class="process__line"></div>
+                <div class="process__step reveal-up" style="--delay: 0.1s">
+                    <div class="process__number">01</div>
+                    <div class="process__content">
+                        <h3>Discovery Call</h3>
+                        <p>We start with a free 15-minute call to understand your property, goals, and timeline. Whether it&rsquo;s an Airbnb launch or a home that won&rsquo;t sell, we&rsquo;ll outline the best approach.</p>
+                    </div>
+                </div>
+                <div class="process__step reveal-up" style="--delay: 0.2s">
+                    <div class="process__number">02</div>
+                    <div class="process__content">
+                        <h3>Property Assessment</h3>
+                        <p>Our designer visits your property for a thorough assessment. We evaluate light, flow, space, and potential. For Airbnbs, we also research your local competition and target guest demographic.</p>
+                    </div>
+                </div>
+                <div class="process__step reveal-up" style="--delay: 0.3s">
+                    <div class="process__number">03</div>
+                    <div class="process__content">
+                        <h3>Design &amp; Presentation</h3>
+                        <p>We create a bespoke design plan with mood boards, colour palettes, furniture selections, and 3D visualisations. You&rsquo;ll see exactly how your space will look before we begin.</p>
+                    </div>
+                </div>
+                <div class="process__step reveal-up" style="--delay: 0.4s">
+                    <div class="process__number">04</div>
+                    <div class="process__content">
+                        <h3>Transformation</h3>
+                        <p>Our team handles everything &mdash; painting, furnishing, accessorising, and styling. We coordinate trusted decorators and suppliers to deliver a turnkey result in as little as 5 working days.</p>
+                    </div>
+                </div>
+                <div class="process__step reveal-up" style="--delay: 0.5s">
+                    <div class="process__number">05</div>
+                    <div class="process__content">
+                        <h3>Photography &amp; Launch</h3>
+                        <p>We style your space for professional photography. For Airbnbs, we optimise your listing copy and images. For sales, we prep for estate agent viewings. Your space is ready to impress.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Calculator -->
+    <section class="quote" id="quote">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Pricing</span>
+                <h2 class="section-title">Instant Quote</h2>
+                <p class="section-subtitle">Get an estimated cost for your project in seconds. Tailored to your property type, size, and needs.</p>
+            </div>
+            <div class="quote__machine reveal-up">
+                <div class="quote__form" id="quoteForm">
+                    <!-- Step 1: Service Type -->
+                    <div class="quote__step quote__step--active" data-step="1">
+                        <div class="quote__step-header">
+                            <span class="quote__step-num">1</span>
+                            <h3>What do you need?</h3>
+                        </div>
+                        <div class="quote__options" data-name="serviceType">
+                            <label class="quote__option">
+                                <input type="radio" name="serviceType" value="airbnb">
+                                <div class="quote__option-card">
+                                    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M6 40V22l18-14 18 14v18"/>
+                                        <rect x="18" y="28" width="12" height="12"/>
+                                    </svg>
+                                    <span class="quote__option-title">Airbnb Fit-Out</span>
+                                    <span class="quote__option-desc">Full staging &amp; design for short-term rentals</span>
+                                </div>
+                            </label>
+                            <label class="quote__option">
+                                <input type="radio" name="serviceType" value="staging">
+                                <div class="quote__option-card">
+                                    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M24 4l5.18 10.5L40 16.36l-8 7.8 1.88 10.97L24 30.27l-9.88 4.86L16 24.16l-8-7.8 10.82-1.86z"/>
+                                    </svg>
+                                    <span class="quote__option-title">Stage to Sell</span>
+                                    <span class="quote__option-desc">Help your unsold home find its buyer</span>
+                                </div>
+                            </label>
+                            <label class="quote__option">
+                                <input type="radio" name="serviceType" value="refresh">
+                                <div class="quote__option-card">
+                                    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M4 24a20 20 0 0136-12M44 24a20 20 0 01-36 12"/>
+                                        <path d="M40 4v8h-8M8 44v-8h8"/>
+                                    </svg>
+                                    <span class="quote__option-title">Property Refresh</span>
+                                    <span class="quote__option-desc">Full interior overhaul &amp; colour redesign</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Property Size -->
+                    <div class="quote__step" data-step="2">
+                        <div class="quote__step-header">
+                            <span class="quote__step-num">2</span>
+                            <h3>Property size</h3>
+                        </div>
+                        <div class="quote__options" data-name="propertySize">
+                            <label class="quote__option">
+                                <input type="radio" name="propertySize" value="studio">
+                                <div class="quote__option-card">
+                                    <span class="quote__option-title">Studio / 1 Bed</span>
+                                    <span class="quote__option-desc">1-2 rooms to style</span>
+                                </div>
+                            </label>
+                            <label class="quote__option">
+                                <input type="radio" name="propertySize" value="2bed">
+                                <div class="quote__option-card">
+                                    <span class="quote__option-title">2 Bedroom</span>
+                                    <span class="quote__option-desc">3-4 rooms to style</span>
+                                </div>
+                            </label>
+                            <label class="quote__option">
+                                <input type="radio" name="propertySize" value="3bed">
+                                <div class="quote__option-card">
+                                    <span class="quote__option-title">3 Bedroom</span>
+                                    <span class="quote__option-desc">5-6 rooms to style</span>
+                                </div>
+                            </label>
+                            <label class="quote__option">
+                                <input type="radio" name="propertySize" value="4bed">
+                                <div class="quote__option-card">
+                                    <span class="quote__option-title">4+ Bedroom</span>
+                                    <span class="quote__option-desc">7+ rooms to style</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Package Level -->
+                    <div class="quote__step" data-step="3">
+                        <div class="quote__step-header">
+                            <span class="quote__step-num">3</span>
+                            <h3>Package level</h3>
+                        </div>
+                        <div class="quote__options" data-name="packageLevel">
+                            <label class="quote__option">
+                                <input type="radio" name="packageLevel" value="essential">
+                                <div class="quote__option-card">
+                                    <span class="quote__option-title">Essential</span>
+                                    <span class="quote__option-desc">Consultation, colour palette, design plan &amp; shopping list</span>
+                                </div>
+                            </label>
+                            <label class="quote__option">
+                                <input type="radio" name="packageLevel" value="premium">
+                                <div class="quote__option-card">
+                                    <span class="quote__option-title">Premium</span>
+                                    <span class="quote__option-desc">Essential + furniture sourcing, 3D renders &amp; styling</span>
+                                </div>
+                            </label>
+                            <label class="quote__option">
+                                <input type="radio" name="packageLevel" value="turnkey">
+                                <div class="quote__option-card">
+                                    <span class="quote__option-title">Turnkey</span>
+                                    <span class="quote__option-desc">Everything handled: design, furnish, decorate &amp; photography</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Extras -->
+                    <div class="quote__step" data-step="4">
+                        <div class="quote__step-header">
+                            <span class="quote__step-num">4</span>
+                            <h3>Add-ons</h3>
+                        </div>
+                        <div class="quote__options quote__options--multi" data-name="extras">
+                            <label class="quote__option">
+                                <input type="checkbox" name="extras" value="photography">
+                                <div class="quote__option-card">
+                                    <span class="quote__option-title">Professional Photography</span>
+                                    <span class="quote__option-price">+&pound;350</span>
+                                </div>
+                            </label>
+                            <label class="quote__option">
+                                <input type="checkbox" name="extras" value="listing">
+                                <div class="quote__option-card">
+                                    <span class="quote__option-title">Airbnb Listing Copy</span>
+                                    <span class="quote__option-price">+&pound;150</span>
+                                </div>
+                            </label>
+                            <label class="quote__option">
+                                <input type="checkbox" name="extras" value="garden">
+                                <div class="quote__option-card">
+                                    <span class="quote__option-title">Outdoor / Garden Styling</span>
+                                    <span class="quote__option-price">+&pound;450</span>
+                                </div>
+                            </label>
+                            <label class="quote__option">
+                                <input type="checkbox" name="extras" value="express">
+                                <div class="quote__option-card">
+                                    <span class="quote__option-title">Express Delivery (5 days)</span>
+                                    <span class="quote__option-price">+25%</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Progress Bar -->
+                    <div class="quote__progress">
+                        <div class="quote__progress-bar" id="quoteProgress"></div>
+                    </div>
+
+                    <!-- Navigation -->
+                    <div class="quote__nav">
+                        <button class="btn btn--ghost quote__prev" id="quotePrev" disabled>Back</button>
+                        <button class="btn btn--primary quote__next" id="quoteNext">
+                            <span>Next</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Quote Result -->
+                <div class="quote__result" id="quoteResult">
+                    <div class="quote__result-header">
+                        <span class="quote__result-tag">Your Estimated Quote</span>
+                        <div class="quote__result-price">
+                            <span class="quote__result-currency">&pound;</span>
+                            <span class="quote__result-amount" id="quoteAmount">0</span>
+                        </div>
+                        <p class="quote__result-note">*This is an indicative estimate. Final pricing confirmed after property assessment.</p>
+                    </div>
+                    <div class="quote__result-breakdown" id="quoteBreakdown">
+                        <!-- Populated by JS -->
+                    </div>
+                    <div class="quote__result-actions">
+                        <a href="#contact" class="btn btn--primary">
+                            <span>Book Consultation</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                        <button class="btn btn--ghost" id="quoteReset">Start Over</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">Client Stories</h2>
+            </div>
+            <div class="testimonials__grid">
+                <div class="testimonial reveal-up" style="--delay: 0.1s">
+                    <div class="testimonial__stars">
+                        <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.45.91-5.33L2.27 6.62l5.34-.78z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.45.91-5.33L2.27 6.62l5.34-.78z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.45.91-5.33L2.27 6.62l5.34-.78z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.45.91-5.33L2.27 6.62l5.34-.78z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.45.91-5.33L2.27 6.62l5.34-.78z"/></svg>
+                    </div>
+                    <blockquote class="testimonial__text">&ldquo;Our Airbnb was barely getting bookings. Jessie completely transformed it &mdash; new colour palette, gorgeous furnishings, even styled it for the photos. We&rsquo;re now fully booked 3 months in advance with a 4.9 rating.&rdquo;</blockquote>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">ST</div>
+                        <div>
+                            <strong>Sarah T.</strong>
+                            <span>Airbnb Host, Cambridge</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial reveal-up" style="--delay: 0.2s">
+                    <div class="testimonial__stars">
+                        <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.45.91-5.33L2.27 6.62l5.34-.78z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.45.91-5.33L2.27 6.62l5.34-.78z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.45.91-5.33L2.27 6.62l5.34-.78z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.45.91-5.33L2.27 6.62l5.34-.78z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.45.91-5.33L2.27 6.62l5.34-.78z"/></svg>
+                    </div>
+                    <blockquote class="testimonial__text">&ldquo;Our house sat on the market for 7 months with zero offers. Two weeks after staging with CPS, we had three offers above asking. The transformation was unbelievable &mdash; worth every penny.&rdquo;</blockquote>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">MR</div>
+                        <div>
+                            <strong>Mark R.</strong>
+                            <span>Homeowner, Essex</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial reveal-up" style="--delay: 0.3s">
+                    <div class="testimonial__stars">
+                        <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.45.91-5.33L2.27 6.62l5.34-.78z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.45.91-5.33L2.27 6.62l5.34-.78z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.45.91-5.33L2.27 6.62l5.34-.78z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.45.91-5.33L2.27 6.62l5.34-.78z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.45.91-5.33L2.27 6.62l5.34-.78z"/></svg>
+                    </div>
+                    <blockquote class="testimonial__text">&ldquo;I manage 6 Airbnbs across Cambridge. Jessie has styled 4 of them now and each one has seen a massive uplift in bookings and guest satisfaction. She just gets what makes a space feel special.&rdquo;</blockquote>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">LP</div>
+                        <div>
+                            <strong>Lisa P.</strong>
+                            <span>Property Manager, Cambridge</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__grid">
+                <div class="about__visual reveal-up">
+                    <div class="about__image-frame">
+                        <img src="https://static.wixstatic.com/media/f4bbec_02a1cf9e52a64ff19b85f60906f0d20f~mv2.jpg/v1/fill/w_560,h_720,al_c,q_80,enc_avif,quality_auto/5Q2A0794_edited_edited.jpg" alt="Jessie - Lead Designer at Cambridge Property Styling" class="about__image">
+                    </div>
+                    <div class="about__accent-block">
+                        <span class="about__accent-num">10+</span>
+                        <span class="about__accent-label">Years of Design Excellence</span>
+                    </div>
+                </div>
+                <div class="about__content reveal-up" style="--delay: 0.2s">
+                    <span class="section-tag">About Us</span>
+                    <h2 class="section-title section-title--left">Meet Jessie</h2>
+                    <p class="about__lead">From Cambridge Colour Consultants to property transformations &mdash; a natural evolution in making spaces extraordinary.</p>
+                    <p>Jessie&rsquo;s passion for interior design has led her to become a highly experienced and sought-after colour consultant for both residential homes and businesses. With over a decade of experience, she has built an impressive portfolio across Cambridge and Essex.</p>
+                    <p>Recognising the growing demand for Airbnb styling and property staging, Jessie launched Cambridge Property Styling &mdash; bringing her signature colour expertise to the world of short-term rentals and the property sales market.</p>
+                    <p>Her deeply personal approach means every project starts with understanding you, your property, and your goals. Whether it&rsquo;s maximising Airbnb bookings or helping a stale listing finally sell, Jessie&rsquo;s eye for colour, texture, and space delivers results that speak for themselves.</p>
+                    <div class="about__creds">
+                        <div class="about__cred">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span>150+ Properties Transformed</span>
+                        </div>
+                        <div class="about__cred">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span>Cambridge &amp; Essex Coverage</span>
+                        </div>
+                        <div class="about__cred">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span>Farrow &amp; Ball Colour Specialist</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact__grid">
+                <div class="contact__info reveal-up">
+                    <span class="section-tag">Get in Touch</span>
+                    <h2 class="section-title section-title--left">Book Your Consultation</h2>
+                    <p class="contact__lead">Ready to transform your property? Get in touch for a free discovery call or book your in-home consultation directly.</p>
+                    <div class="contact__details">
+                        <div class="contact__detail">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                            </svg>
+                            <div>
+                                <strong>Phone</strong>
+                                <a href="tel:07967130199">07967 130 199</a>
+                            </div>
+                        </div>
+                        <div class="contact__detail">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:jessie@cambridgecolourconsultants.co.uk">jessie@cambridgecolourconsultants.co.uk</a>
+                            </div>
+                        </div>
+                        <div class="contact__detail">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <div>
+                                <strong>Location</strong>
+                                <span>Cambridge, CB1</span>
+                            </div>
+                        </div>
+                        <div class="contact__detail">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                            <div>
+                                <strong>Instagram</strong>
+                                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">@cambridgepropertystyling</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__form-wrap reveal-up" style="--delay: 0.2s">
+                    <form class="contact__form" id="contactForm">
+                        <div class="form__group">
+                            <label for="contactName">Full Name</label>
+                            <input type="text" id="contactName" name="name" required placeholder="Your name">
+                            <div class="form__line"></div>
+                        </div>
+                        <div class="form__group">
+                            <label for="contactEmail">Email Address</label>
+                            <input type="email" id="contactEmail" name="email" required placeholder="you@email.com">
+                            <div class="form__line"></div>
+                        </div>
+                        <div class="form__group">
+                            <label for="contactPhone">Phone Number</label>
+                            <input type="tel" id="contactPhone" name="phone" placeholder="07XXX XXX XXX">
+                            <div class="form__line"></div>
+                        </div>
+                        <div class="form__group">
+                            <label for="contactService">Service Interest</label>
+                            <select id="contactService" name="service">
+                                <option value="">Select a service</option>
+                                <option value="airbnb">Airbnb Fit-Out &amp; Design</option>
+                                <option value="staging">Property Staging to Sell</option>
+                                <option value="refresh">Full Property Refresh</option>
+                                <option value="consultation">Colour Consultation Only</option>
+                            </select>
+                            <div class="form__line"></div>
+                        </div>
+                        <div class="form__group form__group--full">
+                            <label for="contactMessage">Tell us about your project</label>
+                            <textarea id="contactMessage" name="message" rows="4" placeholder="Property type, number of rooms, timeline, any specific needs..."></textarea>
+                            <div class="form__line"></div>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full">
+                            <span>Send Enquiry</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                        </button>
+                    </form>
+                    <div class="contact__success" id="contactSuccess">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        <h3>Message Sent!</h3>
+                        <p>Thank you for your enquiry. We&rsquo;ll be in touch within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <a href="#hero" class="nav__logo">
+                        <img class="nav__logo-img" src="https://static.wixstatic.com/media/f4bbec_f5181f050cad4831a8fc011ba7cf59b8~mv2.png/v1/crop/x_99,y_99,w_306,h_296/fill/w_119,h_114,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cambridge(1).png" alt="Cambridge Property Styling Logo">
+                        <span class="nav__logo-text">Cambridge<br>Property Styling</span>
+                    </a>
+                    <p class="footer__tagline">By Cambridge Colour Consultants</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__col">
+                        <h4>Services</h4>
+                        <a href="#services">Airbnb Fit-Out</a>
+                        <a href="#services">Property Staging</a>
+                        <a href="#services">Full Property Refresh</a>
+                        <a href="#quote">Get a Quote</a>
+                    </div>
+                    <div class="footer__col">
+                        <h4>Company</h4>
+                        <a href="#about">About Jessie</a>
+                        <a href="#portfolio">Portfolio</a>
+                        <a href="#process">Our Process</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <div class="footer__col">
+                        <h4>Connect</h4>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+                        <a href="mailto:jessie@cambridgecolourconsultants.co.uk">Email</a>
+                        <a href="tel:07967130199">Phone</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 Cambridge Property Styling. A division of Cambridge Colour Consultants.</p>
+                <div class="footer__legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms &amp; Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
