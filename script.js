@@ -60,19 +60,43 @@
     window.addEventListener('scroll', handleNavScroll, { passive: true });
     handleNavScroll();
 
+    var navOverlay = document.getElementById('navOverlay');
+
+    function openMobileNav() {
+        if (navToggle) navToggle.classList.add('nav__toggle--active');
+        if (navLinks) navLinks.classList.add('nav__links--open');
+        if (navOverlay) navOverlay.classList.add('nav__overlay--visible');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeMobileNav() {
+        if (navToggle) navToggle.classList.remove('nav__toggle--active');
+        if (navLinks) navLinks.classList.remove('nav__links--open');
+        if (navOverlay) navOverlay.classList.remove('nav__overlay--visible');
+        document.body.style.overflow = '';
+    }
+
     if (navToggle && navLinks) {
         navToggle.addEventListener('click', function () {
-            navToggle.classList.toggle('nav__toggle--active');
-            navLinks.classList.toggle('nav__links--open');
+            var isOpen = navLinks.classList.contains('nav__links--open');
+            if (isOpen) {
+                closeMobileNav();
+            } else {
+                openMobileNav();
+            }
         });
 
         // Close menu when a link is clicked
         navLinks.querySelectorAll('.nav__link').forEach(function (link) {
             link.addEventListener('click', function () {
-                navToggle.classList.remove('nav__toggle--active');
-                navLinks.classList.remove('nav__links--open');
+                closeMobileNav();
             });
         });
+
+        // Close menu when overlay is tapped
+        if (navOverlay) {
+            navOverlay.addEventListener('click', closeMobileNav);
+        }
     }
 
     /* ==========================================================================
@@ -473,6 +497,40 @@
         quoteReset.addEventListener('click', resetQuote);
     }
 
+    /* Email Quote — opens mailto: with quote details */
+    var quoteEmailBtn = document.getElementById('quoteEmail');
+    if (quoteEmailBtn) {
+        quoteEmailBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            collectData();
+            var total = calculateQuote();
+
+            var subject = 'Cambridge Property Styling — Quote Enquiry (£' + total.toLocaleString() + ')';
+
+            var body = 'Hi Jessie,%0D%0A%0D%0A';
+            body += 'I have just used the quote calculator on your website and would love to discuss my project further.%0D%0A%0D%0A';
+            body += '--- QUOTE SUMMARY ---%0D%0A';
+            body += 'Service: ' + getServiceLabel(quoteData.serviceType) + '%0D%0A';
+            body += 'Property Size: ' + getSizeLabel(quoteData.propertySize) + '%0D%0A';
+            body += 'Package: ' + getPackageLabel(quoteData.packageLevel) + '%0D%0A';
+
+            if (quoteData.extras.length > 0) {
+                body += 'Add-ons: ' + quoteData.extras.map(function (ex) { return getExtraLabel(ex); }).join(', ') + '%0D%0A';
+            }
+
+            body += 'Estimated Total: £' + total.toLocaleString() + '%0D%0A';
+            body += '---%0D%0A%0D%0A';
+            body += 'My Details:%0D%0A';
+            body += 'Name: %0D%0A';
+            body += 'Phone: %0D%0A';
+            body += 'Property Address: %0D%0A';
+            body += 'Preferred Contact Time: %0D%0A%0D%0A';
+            body += 'Kind regards';
+
+            window.location.href = 'mailto:jessie@cambridgecolourconsultants.co.uk?subject=' + encodeURIComponent(subject) + '&body=' + body;
+        });
+    }
+
     function shakeButton(btn) {
         btn.style.animation = 'shake 0.5s ease';
         btn.addEventListener('animationend', function handler() {
@@ -532,52 +590,56 @@
     }
 
     /* ==========================================================================
-       MICRO-INTERACTIONS — magnetic buttons, tilt cards
+       MICRO-INTERACTIONS — magnetic buttons, tilt cards (desktop only)
        ========================================================================== */
 
-    // Magnetic effect on CTA buttons
-    document.querySelectorAll('.btn--primary').forEach(function (btn) {
-        btn.addEventListener('mousemove', function (e) {
-            var rect = btn.getBoundingClientRect();
-            var x = e.clientX - rect.left - rect.width / 2;
-            var y = e.clientY - rect.top - rect.height / 2;
-            btn.style.transform = 'translate(' + (x * 0.15) + 'px, ' + (y * 0.15 - 2) + 'px)';
+    var isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+
+    if (!isTouchDevice) {
+        // Magnetic effect on CTA buttons
+        document.querySelectorAll('.btn--primary').forEach(function (btn) {
+            btn.addEventListener('mousemove', function (e) {
+                var rect = btn.getBoundingClientRect();
+                var x = e.clientX - rect.left - rect.width / 2;
+                var y = e.clientY - rect.top - rect.height / 2;
+                btn.style.transform = 'translate(' + (x * 0.15) + 'px, ' + (y * 0.15 - 2) + 'px)';
+            });
+
+            btn.addEventListener('mouseleave', function () {
+                btn.style.transform = '';
+            });
         });
 
-        btn.addEventListener('mouseleave', function () {
-            btn.style.transform = '';
-        });
-    });
+        // Subtle tilt on service cards
+        document.querySelectorAll('.service-card').forEach(function (card) {
+            card.addEventListener('mousemove', function (e) {
+                var rect = card.getBoundingClientRect();
+                var x = (e.clientX - rect.left) / rect.width - 0.5;
+                var y = (e.clientY - rect.top) / rect.height - 0.5;
+                card.style.transform = 'translateY(-8px) perspective(600px) rotateX(' +
+                    (y * -3) + 'deg) rotateY(' + (x * 3) + 'deg)';
+            });
 
-    // Subtle tilt on service cards
-    document.querySelectorAll('.service-card').forEach(function (card) {
-        card.addEventListener('mousemove', function (e) {
-            var rect = card.getBoundingClientRect();
-            var x = (e.clientX - rect.left) / rect.width - 0.5;
-            var y = (e.clientY - rect.top) / rect.height - 0.5;
-            card.style.transform = 'translateY(-8px) perspective(600px) rotateX(' +
-                (y * -3) + 'deg) rotateY(' + (x * 3) + 'deg)';
-        });
-
-        card.addEventListener('mouseleave', function () {
-            card.style.transform = '';
-        });
-    });
-
-    // Subtle tilt on testimonial cards
-    document.querySelectorAll('.testimonial').forEach(function (card) {
-        card.addEventListener('mousemove', function (e) {
-            var rect = card.getBoundingClientRect();
-            var x = (e.clientX - rect.left) / rect.width - 0.5;
-            var y = (e.clientY - rect.top) / rect.height - 0.5;
-            card.style.transform = 'translateY(-6px) perspective(600px) rotateX(' +
-                (y * -2) + 'deg) rotateY(' + (x * 2) + 'deg)';
+            card.addEventListener('mouseleave', function () {
+                card.style.transform = '';
+            });
         });
 
-        card.addEventListener('mouseleave', function () {
-            card.style.transform = '';
+        // Subtle tilt on testimonial cards
+        document.querySelectorAll('.testimonial').forEach(function (card) {
+            card.addEventListener('mousemove', function (e) {
+                var rect = card.getBoundingClientRect();
+                var x = (e.clientX - rect.left) / rect.width - 0.5;
+                var y = (e.clientY - rect.top) / rect.height - 0.5;
+                card.style.transform = 'translateY(-6px) perspective(600px) rotateX(' +
+                    (y * -2) + 'deg) rotateY(' + (x * 2) + 'deg)';
+            });
+
+            card.addEventListener('mouseleave', function () {
+                card.style.transform = '';
+            });
         });
-    });
+    }
 
     /* ==========================================================================
        PARALLAX — subtle background movement on hero

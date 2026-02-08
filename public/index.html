@@ -16,6 +16,7 @@
 
     <!-- Navigation -->
     <nav class="nav" id="mainNav">
+        <div class="nav__overlay" id="navOverlay"></div>
         <div class="nav__inner">
             <a href="#hero" class="nav__logo">
                 <img class="nav__logo-img" src="https://static.wixstatic.com/media/f4bbec_f5181f050cad4831a8fc011ba7cf59b8~mv2.png/v1/crop/x_99,y_99,w_306,h_296/fill/w_119,h_114,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cambridge(1).png" alt="Cambridge Property Styling Logo">
@@ -563,10 +564,11 @@
                         <!-- Populated by JS -->
                     </div>
                     <div class="quote__result-actions">
-                        <a href="#contact" class="btn btn--primary">
-                            <span>Book Consultation</span>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        <a href="#" class="btn btn--primary" id="quoteEmail">
+                            <span>Email This Quote</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                         </a>
+                        <a href="#contact" class="btn btn--ghost">Book Consultation</a>
                         <button class="btn btn--ghost" id="quoteReset">Start Over</button>
                     </div>
                 </div>
@@ -808,8 +810,8 @@
             <div class="footer__bottom">
                 <p>&copy; 2026 Cambridge Property Styling. A division of Cambridge Colour Consultants.</p>
                 <div class="footer__legal">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms &amp; Conditions</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms &amp; Conditions</a>
                 </div>
             </div>
         </div>
